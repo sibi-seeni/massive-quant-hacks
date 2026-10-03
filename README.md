@@ -84,10 +84,19 @@ What we learned along the way:
 The **push** (3:55 PM → 4:00 PM) is measured *before* the close, so after-hours earnings news
 cannot contaminate it. It held up in both years.
 
-- Biggest 10% of imbalances, test year: crowded-side orders paid **TODO bps** extra on average
-  (from `python models.py`)
-- Push model direction accuracy on those days (test year): **TODO %**
-- On a $10M closing order that's roughly **$TODO** per day
+| Biggest 10% of imbalances | Train | **Test (never seen)** |
+|---|---|---|
+| Extra cost paid by crowded-side orders | +2.63 bps (t = 5.6, n = 2,356) | **+2.07 bps (t = 3.2, n = 2,109)** |
+| Push model gets the direction right | 57% | **57%** |
+| Correlation, predicted vs actual push | 0.13 | **0.11** |
+
+- On a **$10M** closing order on the crowded side, that's about **$2,000 per order**, and large
+  funds place closing orders across many stocks every day.
+- The effect is concentrated in the largest imbalances; small imbalances carry no signal, so the
+  app only alerts above a size threshold.
+- The model is deliberately simple (linear, three inputs known at 3:55 PM). Its two size inputs
+  overlap, so individual coefficients aren't meaningful on their own; only the combined
+  prediction is.
 
 The app shows, for any stock and date: imbalance side and size, predicted push, whether *your*
 order is on the crowded side, the expected cost in bps and dollars, and the most crowded closes
