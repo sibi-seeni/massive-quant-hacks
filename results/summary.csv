@@ -1,0 +1,9 @@
+split,strategy,trades,days_with_trades,trading_days,avg_trades_per_active_day,avg_net_bps_per_trade,hit_rate_after_costs,total_net_bps,sharpe,t_stat,max_drawdown_bps,deflated_sharpe_prob
+train,Filtered (main strategy),769,191,237,4.0,9.75,0.528,3301.0,2.48,2.41,-469.1,0.758
+train,"Baseline: top 5%, no filter",1179,213,237,5.5,8.15,0.524,2824.1,2.36,2.29,-590.4,0.691
+train,"Filtered, double costs (6 bps)",769,191,237,4.0,6.75,0.511,2728.0,2.06,1.99,-484.1,0.548
+train,"Filtered, NOT market-hedged",769,191,237,4.0,14.15,0.495,3222.4,2.37,2.3,-521.8,0.703
+test,Filtered (main strategy),701,190,249,3.7,4.33,0.509,1577.1,0.84,0.83,-842.2,0.111
+test,"Baseline: top 5%, no filter",1026,211,249,4.9,3.68,0.504,649.2,0.42,0.42,-1405.0,0.068
+test,"Filtered, double costs (6 bps)",701,190,249,3.7,1.33,0.496,1007.1,0.53,0.53,-954.4,0.068
+test,"Filtered, NOT market-hedged",701,190,249,3.7,12.63,0.524,2884.5,1.58,1.57,-720.9,0.346
