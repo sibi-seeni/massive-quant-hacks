@@ -6,7 +6,11 @@
 .ipynb_checkpoints/
 __pycache__/
 
+<<<<<<< HEAD
 .DS_Store
 
 data
 *.zip
+=======
+.DS_Store/
+>>>>>>> 04c35ec36d5007e7a51d0a28edaf788c96011421
