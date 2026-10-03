@@ -1,0 +1,2 @@
+run_at,tags,strategy,bucket,otm,entry,earnings_filter_days,acceptance_fix,n_in,mean_in_h21,diff_vs_placebo_h21,diff_ci_lo,diff_ci_hi,n_oos,mean_oos_h21,note
+2026-10-03T16:10:58,ceo_departure+cfo_departure,protective_put,3-6m,0.05,post,0,True,60,0.00925451645226066,-0.005180197569546425,-0.03100709554350619,0.02299329200699641,26,0.036671222770299446,B gov shock; pre-entry pricing test; post = tradability
